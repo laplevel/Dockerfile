@@ -9,7 +9,9 @@ RUN apt-get update \
     && curl -sL https://aka.ms/InstallAzureCLIDeb | bash \
     && apt-get install -y python3 python3-pip \
     && rm -rf /var/lib/apt/lists/*
+    
 WORKDIR /Andris
+
 COPY . .
 
 CMD ["bash"]
